@@ -1,0 +1,27 @@
+main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Inicialmente, define uma grade com um mínimo de 300px e distribui as colunas automaticamente */
+    gap: 25px; /* Define o espaçamento entre os cards */
+}
+
+/* Para telas LG (1280px a 1919px) */
+@media screen and (min-width: 1280px) {
+    main {
+        grid-template-columns: repeat(3, 1fr); /* Define 3 colunas por linha */
+    }
+}
+
+/* Para telas MD (960px a 1279px) */
+@media screen and (min-width: 960px) and (max-width: 1279px) {
+    main {
+        grid-template-columns: repeat(2, 1fr); /* Define 2 colunas por linha */
+    }
+}
+
+/* Para telas menores que MD (até 959px) */
+@media screen and (max-width: 959px) {
+    main {
+        grid-template-columns: repeat(1, 1fr); /* Define 1 coluna por linha */
+    }
+}
