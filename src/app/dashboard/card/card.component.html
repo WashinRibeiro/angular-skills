@@ -11,10 +11,11 @@
     </p>
   </mat-card-content>
   <mat-card-actions>
-    <button mat-button (click)="onLike()" [style.background]="color">
+    <button mat-button (click)="onLike()" [style.background]="color" [disabled]="loading">
       LIKE
+      <mat-spinner *ngIf="loading" diameter="15"></mat-spinner>
     </button>
-    <button mat-button (click)="onShare()" [style.background]="'#7fffd4'">SHARE</button>
+    <button mat-button (click)="onShare()" class="share">SHARE</button>
     <div class="count-likes">
       <p>{{card.likes}}</p>
       <mat-icon>thumb_up</mat-icon>

@@ -59,22 +59,6 @@
   align-items: center;
 }
 
-.card button.default {
-  background-color: #75e975;
-}
-
-.card button.higher-equal-than-five {
-  background-color: #36bdf9;
-}
-
-.card button.higher-than-ten {
-  background-color: #f56464;
-}
-
-.card button.share {
-  background-color: #7fffd4;
-}
-
 .card .mat-card-actions .count-likes {
   margin-left: auto;
   display: flex;
@@ -86,11 +70,17 @@
   font-weight: 700;
 }
 
-.mat-progress-spinner circle, .mat-spinner circle {
-  stroke: #000000;
+.card .mat-card-actions .mat-button-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-mat-spinner {
-  width: 10px;
-  height: 10px;
+.card .mat-card-actions .share {
+  background-color: #7fffd4;
+}
+
+.mat-progress-spinner circle,
+.mat-spinner circle {
+  stroke: #000000;
 }
