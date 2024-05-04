@@ -16,7 +16,6 @@ import { CardComponent } from "./dashboard/card/card.component";
 import { DashboardComponent } from "./dashboard/dashboard.component";
 import { LoadingComponent } from "./dashboard/loading/loading.component";
 import { FakeApiService } from "./fake-api.service";
-import { HelloComponent } from "./hello.component";
 
 @NgModule({
   imports: [
@@ -33,7 +32,6 @@ import { HelloComponent } from "./hello.component";
   ],
   declarations: [
     AppComponent,
-    HelloComponent,
     DashboardComponent,
     CardComponent,
     LoadingComponent,
